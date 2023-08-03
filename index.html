@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReactJS</title>
     <link rel="icon" href="assets/Prasanth K S_Profile.jpg">
     <style>
-        
+        .flex-container {
+            display: flex;
+            background-color: black;
+            flex-direction: column;
+        }
+        .flex-container > div{
+            background-color: azure;
+            font-size: 30px;
+            margin: 10px;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255,255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
         /* *{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }*/
-        .hello{
+        .hello {
             padding-left: 20%;
         }
-        h3.padTop{
+
+        h3.padTop {
             padding-top: 10%;
             padding-bottom: 10%;
         }
-        #vettri{
+
+        #vettri {
             color: navy;
         }
     </style>
-    <link rel="stylesheet" href="assets/styling.css">
+    <link rel="stylesheet" href="assets/styling.css">  
 </head>
 <body>
-    
-    <h1 style="font-family: 'Courier New', Courier, monospace;">This is React Class for <span>3rd year students</span></h1>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">This is React Class for <span>3rd year students</span>
+    </h1>
     <h2 class="hello">This is ReactJS Class for 3rd year students</h2>
     <h3 id="vettri">This is ReactJS Class for 3rd year students</h3>
     <p class="padTop">This is Prasanth <br> I have studied CSE</p>
@@ -34,33 +58,41 @@
         <li>12th</li>
         <li>UG</li>
     </ul>
+    <div class="flex-container">
+        <div> home </div>
+        <div> help </div>
+    </div>
+    <div class="grid-container">
+    <div class="grid-item"> hello </div>
+    <div class="grid-item"> hi </div>
+    </div>
     <div>
         <ol>
             <li id="vettri">10th</li>
             <li>12th</li>
             <li>UG</li>
         </ol>
-        <ol type = "1" start="5">
+        <ol type="1" start="5">
             <li>10th</li>
             <li>12th</li>
             <li>UG</li>
         </ol>
-        <ol type = "A" start="26">
+        <ol type="A" start="26">
             <li>10th</li>
             <li>12th</li>
             <li>UG</li>
         </ol>
-        <ol type = "a" start="26">
+        <ol type="a" start="26">
             <li>10th</li>
             <li>12th</li>
             <li>UG</li>
         </ol>
-        <ol type = "I" start="1000">
+        <ol type="I" start="1000">
             <li>10th</li>
             <li>12th</li>
             <li>UG</li>
         </ol>
-        <ol type = "i" start="1000">
+        <ol type="i" start="1000">
             <li>10th</li>
             <li>12th</li>
             <li>UG</li>
@@ -68,4 +100,5 @@
         <img src="assets/WhatsappQR.jpeg" alt="QR Code" width="300" height="600">
     </div>
 </body>
+
 </html>
