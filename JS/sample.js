@@ -50,5 +50,3 @@ while(i <= d){
     console.log(i)
     i++
 }
-array = [10,20]
-array.forEach(element => console.log(element));
